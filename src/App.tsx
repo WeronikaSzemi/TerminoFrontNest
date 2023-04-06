@@ -3,6 +3,7 @@ import {LoginContext} from "./contexts/login.context";
 import {Route, Routes} from "react-router-dom";
 import './App.css';
 import { HomeView } from "./views/HomeView";
+import { RegisterView } from "./views/RegisterView";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -14,10 +15,10 @@ function App() {
           <Routes>
               <Route path='/'
                      element={<HomeView/>}/>
+              <Route path='/user/register'
+                     element={<RegisterView/>}/>
               {/*<Route path='/user/login'*/}
               {/*       element={<LoginView/>}/>*/}
-              {/*<Route path='/user/register'*/}
-              {/*       element={<RegisterView/>}/>*/}
               {/*<Route path='/user/:id'*/}
               {/*       element={<DashboardView/>}/>*/}
               {/*<Route path='/termbase'*/}
