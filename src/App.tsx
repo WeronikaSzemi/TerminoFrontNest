@@ -4,6 +4,7 @@ import {Route, Routes} from "react-router-dom";
 import './App.css';
 import { HomeView } from "./views/HomeView";
 import { RegisterView } from "./views/RegisterView";
+import { LoginView } from "./views/LoginView";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -17,8 +18,8 @@ function App() {
                      element={<HomeView/>}/>
               <Route path='/user/register'
                      element={<RegisterView/>}/>
-              {/*<Route path='/user/login'*/}
-              {/*       element={<LoginView/>}/>*/}
+              <Route path='/user/login'
+                     element={<LoginView/>}/>
               {/*<Route path='/user/:id'*/}
               {/*       element={<DashboardView/>}/>*/}
               {/*<Route path='/termbase'*/}
