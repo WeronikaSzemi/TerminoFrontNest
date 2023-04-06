@@ -5,6 +5,7 @@ import './App.css';
 import { HomeView } from "./views/HomeView";
 import { RegisterView } from "./views/RegisterView";
 import { LoginView } from "./views/LoginView";
+import { TermbaseListView } from "./views/TermbaseListView";
 
 function App() {
   const [id, setId] = useState('');
@@ -21,15 +22,15 @@ function App() {
                      element={<LoginView/>}/>
               {/*<Route path='/user/:id'*/}
               {/*       element={<DashboardView/>}/>*/}
-              {/*<Route path='/termbase'*/}
-              {/*       element={<TermbaseListView/>}/>*/}
-              {/*<Route path='/termbase/:termbaseId'*/}
+              <Route path='/:id/termbase'
+                     element={<TermbaseListView/>}/>
+              {/*<Route path='/:id/termbase/:termbaseId'*/}
               {/*       element={<TermbaseView/>}/>*/}
-              {/*<Route path='/entry/add'*/}
+              {/*<Route path='/:id/termbase/:termbaseId/entry/add'*/}
               {/*       element={<AddEntryView/>}/>*/}
-              {/*<Route path='/entry/:entryId'*/}
+              {/*<Route path='/:id/termbase/:termbaseId/entry/:entryId'*/}
               {/*       element={<EntryView/>}/>*/}
-              {/*<Route path='/entry/:entryId/edit'*/}
+              {/*<Route path='/:id/termbase/:termbaseId/entry/:entryId/edit'*/}
               {/*       element={<EditEntryView/>}/>*/}
               {/*<Route path='/demo'*/}
               {/*       element={<DemoView/>}/>*/}
