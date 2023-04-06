@@ -23,7 +23,7 @@ export const TermbaseTableRow = (props: Props) => {
 		if (!result.result) {
 			navigate('/user/login');
 		} else {
-			await fetch(`http://localhost:3001/${id}/${props.termbase.termbaseId}`, {
+			await fetch(`http://localhost:3001/${id}/termbase/${props.termbase.termbaseId}`, {
 				method: 'DELETE',
 			});
 			setShowModal(false);

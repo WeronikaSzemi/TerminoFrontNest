@@ -4,6 +4,7 @@ import { Spinner } from "../Spinner/Spinner";
 import { UserContext } from "../../contexts/user.context";
 import { TermbaseEntity } from "../../types/termbase-entity";
 import { TermbaseTable } from "./TermbaseTable";
+import { AddTermbase } from "./AddTermbase";
 
 export const TermbaseList = () => {
 	const [termbaseList, setTermbaseList] = useState<TermbaseEntity[] | null>(null);
@@ -59,9 +60,9 @@ export const TermbaseList = () => {
 		{/*>*/}
 		{/*	Wróć do panelu*/}
 		{/*</Link>*/}
-		{/*<div>*/}
-		{/*	{showForm ? <AddTermbase onListChange={refreshList}/> : null}*/}
-		{/*</div>*/}
+		<div>
+			{showForm ? <AddTermbase onListChange={refreshList}/> : null}
+		</div>
 		<TermbaseTable termbaseList={termbaseList}
 						onListChange={refreshList}
 		/>
