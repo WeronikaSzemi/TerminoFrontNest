@@ -1,20 +1,24 @@
 import React, { BaseSyntheticEvent, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../style.css";
-import { LoginContext } from "../../contexts/login.context";
+import { UserContext } from "../../contexts/user.context";
 
 export const Menu = () => {
-	const { id, loggedIn } = useContext(LoginContext);
+	const { setId } = useContext(UserContext);
 
 	const navigate = useNavigate();
 
-	const handleDashboardReq = (e: BaseSyntheticEvent) => {
+	const handleDashboardReq = async (e: BaseSyntheticEvent) => {
 		e.preventDefault();
 
-		if (!loggedIn) {
+		const res = await fetch('http://localhost:3001/auth/verify');
+		const result = await res.json();
+
+		if (!result.result) {
 			navigate('/user/login');
 		} else {
-			navigate(`/user/${id}`);
+			setId(result.user.userId);
+			navigate(`/user/${result.result.userId}`);
 		}
 	}
 

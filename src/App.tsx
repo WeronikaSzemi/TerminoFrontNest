@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {LoginContext} from "./contexts/login.context";
+import {UserContext} from "./contexts/user.context";
 import {Route, Routes} from "react-router-dom";
 import './App.css';
 import { HomeView } from "./views/HomeView";
@@ -7,12 +7,11 @@ import { RegisterView } from "./views/RegisterView";
 import { LoginView } from "./views/LoginView";
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
   const [id, setId] = useState('');
 
   return (
     <>
-      <LoginContext.Provider value={{loggedIn, setLoggedIn, id, setId}}>
+      <UserContext.Provider value={{id, setId}}>
           <Routes>
               <Route path='/'
                      element={<HomeView/>}/>
@@ -37,7 +36,7 @@ function App() {
               {/*<Route path='*'*/}
               {/*       element={<NotFoundView/>}/>*/}
           </Routes>
-      </LoginContext.Provider>
+      </UserContext.Provider>
       </>
   );
 }

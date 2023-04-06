@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FormEvent, useContext, useState } from "react";
 import { newUser } from "../../types/new-user";
-import { LoginContext } from "../../contexts/login.context";
+import { UserContext } from "../../contexts/user.context";
 
 export const Login = () => {
 	const [user, setUser] = useState<newUser>({
@@ -13,7 +13,7 @@ export const Login = () => {
 		style: '',
 	});
 
-	const { setId } = useContext(LoginContext);
+	const { setId } = useContext(UserContext);
 
 	const navigate = useNavigate();
 
