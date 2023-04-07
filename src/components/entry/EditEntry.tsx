@@ -1,10 +1,9 @@
 import { ComponentState, FormEvent, useContext, useEffect, useState } from "react";
-import { EntryEntity } from "../../types/entry-entity";
+import { EntryEntity, NewEntry } from "../../types/entry-entity";
 import { UserContext } from "../../contexts/user.context";
 import { TermbaseContext } from "../../contexts/termbase.context";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Spinner } from "../Spinner/Spinner";
-import { NewEntry } from "../../types/new-entry";
 
 export const EditEntry = () => {
 	const [entry, setEntry] = useState<NewEntry | null>(null);

@@ -14,3 +14,5 @@ export interface EntryEntity {
 	equivalentCollocations?: string;
 	termbase: string;
 }
+
+export type NewEntry = Omit<EntryEntity, 'id' | 'createdAt' | 'modifiedAt' | 'termbase'>
