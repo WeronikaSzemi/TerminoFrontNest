@@ -35,8 +35,8 @@ function App() {
                          element={<EntryListView/>}/>
                   <Route path='/:id/termbase/:termbaseId/entry/add'
                          element={<AddEntryView/>}/>
-                  {/*<Route path='/:id/termbase/:termbaseId/entry/:entryId'*/}
-                  {/*       element={<SingleEntryView/>}/>*/}
+                  <Route path='/:id/termbase/:termbaseId/entry/:entryId'
+                         element={<SingleEntryView/>}/>
                   <Route path='/:id/termbase/:termbaseId/entry/:entryId/edit'
                          element={<EditEntryView/>}/>
                   {/*<Route path='/demo'*/}
