@@ -4,21 +4,26 @@ import "../style.css";
 import { UserContext } from "../../contexts/user.context";
 
 export const Menu = () => {
-	const { setId } = useContext(UserContext);
+	const { id, setId } = useContext(UserContext);
 
 	const navigate = useNavigate();
 
 	const handleDashboardReq = async (e: BaseSyntheticEvent) => {
 		e.preventDefault();
 
-		const res = await fetch('http://localhost:3001/auth/verify');
-		const result = await res.json();
 
-		if (!result.result) {
-			navigate('/user/login');
+		if (id) {
+			const res = await fetch(`http://localhost:3001/auth/verify/${id}`);
+			const result = await res.json();
+
+			if (!result.result) {
+				navigate('/user/login');
+			} else {
+				setId(result.user.userId);
+				navigate(`/user/${result.result.userId}`);
+			}
 		} else {
-			setId(result.user.userId);
-			navigate(`/user/${result.result.userId}`);
+			navigate('/user/login');
 		}
 	}
 
