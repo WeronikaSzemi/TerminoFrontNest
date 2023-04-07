@@ -201,3 +201,13 @@ input.required-field {
 .entry-table > :not(caption) > * > * {
     padding: 0.5rem 1.5rem
 }
+
+/* form labels styles */
+
+.form-label > p, textarea {
+    margin: 10px 0 1px;
+}
+
+textarea {
+    margin-top: 0;
+}

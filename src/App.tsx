@@ -8,6 +8,7 @@ import { LoginView } from "./views/LoginView";
 import { TermbaseListView } from "./views/TermbaseListView";
 import { EntryListView } from "./views/EntryListView";
 import { TermbaseContext } from "./contexts/termbase.context";
+import { AddEntryView } from "./views/AddEntryView";
 
 function App() {
   const [id, setId] = useState('');
@@ -30,8 +31,8 @@ function App() {
                          element={<TermbaseListView/>}/>
                   <Route path='/:id/termbase/:termbaseId/entry'
                          element={<EntryListView/>}/>
-                  {/*<Route path='/:id/termbase/:termbaseId/entry/add'*/}
-                  {/*       element={<AddEntryView/>}/>*/}
+                  <Route path='/:id/termbase/:termbaseId/entry/add'
+                         element={<AddEntryView/>}/>
                   {/*<Route path='/:id/termbase/:termbaseId/entry/:entryId'*/}
                   {/*       element={<EntryView/>}/>*/}
                   {/*<Route path='/:id/termbase/:termbaseId/entry/:entryId/edit'*/}
