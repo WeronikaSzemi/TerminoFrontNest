@@ -191,3 +191,13 @@ input.required-field {
     padding: 50px;
     z-index: 1000;
 }
+
+/* entry table styles */
+
+.entry-table {
+    width: auto;
+}
+
+.entry-table > :not(caption) > * > * {
+    padding: 0.5rem 1.5rem
+}
