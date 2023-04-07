@@ -46,8 +46,8 @@ export const Login = () => {
 				content: '',
 				style: '',
 			});
-			setId(result.user.userId);
-			navigate(`/${result.user.userId}/termbase`)
+			setId(result.userId);
+			navigate(`/${result.userId}/termbase`)
 		}
 	}
 
