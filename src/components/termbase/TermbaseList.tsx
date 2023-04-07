@@ -5,6 +5,7 @@ import { UserContext } from "../../contexts/user.context";
 import { TermbaseEntity } from "../../types/termbase-entity";
 import { TermbaseTable } from "./TermbaseTable";
 import { AddTermbase } from "./AddTermbase";
+import { TermbaseContext } from "../../contexts/termbase.context";
 
 export const TermbaseList = () => {
 	const [termbaseList, setTermbaseList] = useState<TermbaseEntity[] | null>(null);
