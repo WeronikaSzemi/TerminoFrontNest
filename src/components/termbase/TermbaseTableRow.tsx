@@ -1,5 +1,5 @@
-import React, { BaseSyntheticEvent, useContext, useState } from "react";
-import {Link, useNavigate} from "react-router-dom";
+import React, { useContext, useState } from "react";
+import {Link} from "react-router-dom";
 import { TermbaseEntity } from "../../types/termbase-entity";
 import {ConfirmDeleteModal} from "../common/ConfirmDeleteModal";
 import { UserContext } from "../../contexts/user.context";
@@ -14,54 +14,24 @@ export const TermbaseTableRow = (props: Props) => {
 	const [showModal, setShowModal] = useState(false);
 
 	const { id } = useContext(UserContext);
-	const { termbaseId, setTermbaseId } = useContext(TermbaseContext);
-
-	const navigate = useNavigate();
-
-	const saveTermbaseId = (e: BaseSyntheticEvent) => {
-		e.preventDefault();
-
-		setTermbaseId(props.termbase.termbaseId);
-		navigate( `/${id}/termbase/${props.termbase.termbaseId}/entry`);
-	}
+	const { setTermbaseId } = useContext(TermbaseContext);
 
 	const deleteTermbase = async () => {
-		const verifRes = await fetch(`http://localhost:3001/auth/verify/${id}`);
-		const result = await verifRes.json();
-
-		if (!result.result) {
-			navigate('/user/login');
-		} else {
-			await fetch(`http://localhost:3001/${id}/termbase/${props.termbase.termbaseId}`, {
-				credentials: 'include',
-				method: 'DELETE',
-			});
-			setShowModal(false);
-			props.onListChange();
-		}
+		await fetch(`http://localhost:3001/${id}/termbase/${props.termbase.termbaseId}`, {
+			credentials: 'include',
+			method: 'DELETE',
+		});
+		setShowModal(false);
+		props.onListChange();
 	}
 
 	return <tr>
 		<td><strong>{props.termbase.termbaseName}</strong></td>
 		<td>
 			<div className="delete-wrap">
-				{/*<Link to={`/${id}/termbase/${props.termbase.termbaseId}/entry`}*/}
-				{/*	  className="btn btn-sm theme-btn-mainbrand mx-1 my-1 my-md-0"*/}
-				{/*	  onClick={saveTermbaseId}*/}
-				{/*>*/}
-				{/*	<svg xmlns="http://www.w3.org/2000/svg"*/}
-				{/*		 width="16"*/}
-				{/*		 height="16"*/}
-				{/*		 fill="currentColor"*/}
-				{/*		 className="bi bi-eye-fill"*/}
-				{/*		 viewBox="0 0 16 16">*/}
-				{/*		<path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>*/}
-				{/*		<path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>*/}
-				{/*	</svg>*/}
-				{/*</Link>*/}
-				<button
+				<Link to={`/${id}/termbase/${props.termbase.termbaseId}/entry`}
 					  className="btn btn-sm theme-btn-mainbrand mx-1 my-1 my-md-0"
-					  onClick={saveTermbaseId}
+					  onClick={() => setTermbaseId(props.termbase.termbaseId)}
 				>
 					<svg xmlns="http://www.w3.org/2000/svg"
 						 width="16"
@@ -72,7 +42,7 @@ export const TermbaseTableRow = (props: Props) => {
 						<path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
 						<path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
 					</svg>
-				</button>
+				</Link>
 				<button
 					className="btn btn-sm theme-btn-darkaccent mx-1 my-1 my-md-0"
 					onClick={() => setShowModal(true)}

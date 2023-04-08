@@ -1,7 +1,5 @@
 import { TermbaseTableRow } from "./TermbaseTableRow";
-import { useContext } from "react";
 import { TermbaseEntity } from "../../types/termbase-entity";
-import { UserContext } from "../../contexts/user.context";
 
 interface Props {
 	termbaseList: TermbaseEntity[],
@@ -9,8 +7,6 @@ interface Props {
 }
 
 export const TermbaseTable = (props: Props) => {
-
-	const { id } = useContext(UserContext);
 
 	return <table className="table table-striped entry-table align-middle">
 		<thead className="theme-bg-dark theme-text-light">
