@@ -1,9 +1,9 @@
-import { Menu } from "../components/homepage/Menu";
 import { Dashboard } from "../components/user/Dashboard";
+import { UserMenu } from "../components/common/UserMenu";
 
 export const DashboardView = () => {
 	return <>
-		<Menu/>
+		<UserMenu/>
 		<Dashboard/>
 	</>
 }

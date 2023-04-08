@@ -1,9 +1,9 @@
-import { Menu } from "../components/homepage/Menu";
 import { AddEntry } from "../components/entry/AddEntry";
+import { UserMenu } from "../components/common/UserMenu";
 
 export const AddEntryView = () => {
 	return <>
-		<Menu/>
+		<UserMenu/>
 		<AddEntry/>
 	</>
 }
