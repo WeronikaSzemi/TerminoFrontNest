@@ -34,20 +34,20 @@ export const Register = () => {
 	}, [user.pwd]);
 
 	const verifyEmail = async () => {
-		const res = await fetch(`http://localhost:3001/user/${user.email}`);
+		const res = await fetch(`http://localhost:3001/user/${user.email}?by=email`);
 		const result = await res.json();
 
-		if (result) {
-			setEmailVerifRes({
-				result: false,
-				content: `Istnieje już konto dla podanego adresu email. Zaloguj się lub podaj inny adres.`,
-				backgroundColor: 'lightcoral',
-			});
-		} else {
+		if (!result) {
 			setEmailVerifRes({
 				result: true,
 				content: '',
 				backgroundColor: '',
+			});
+		} else {
+			setEmailVerifRes({
+				result: false,
+				content: `Istnieje już konto dla podanego adresu email. Zaloguj się lub podaj inny adres.`,
+				backgroundColor: 'lightcoral',
 			});
 		}
 	}

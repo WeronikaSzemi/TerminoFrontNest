@@ -11,6 +11,7 @@ import { TermbaseContext } from "./contexts/termbase.context";
 import { AddEntryView } from "./views/AddEntryView";
 import { SingleEntryView } from "./views/SingleEntryView";
 import { EditEntryView } from "./views/EditEntryView";
+import { DashboardView } from "./views/DashboardView";
 
 function App() {
   const [id, setId] = useState('');
@@ -27,8 +28,8 @@ function App() {
                          element={<RegisterView/>}/>
                   <Route path='/user/login'
                          element={<LoginView/>}/>
-                  {/*<Route path='/user/:id'*/}
-                  {/*       element={<DashboardView/>}/>*/}
+                  <Route path='/user/:id'
+                         element={<DashboardView/>}/>
                   <Route path='/:id/termbase'
                          element={<TermbaseListView/>}/>
                   <Route path='/:id/termbase/:termbaseId/entry'
