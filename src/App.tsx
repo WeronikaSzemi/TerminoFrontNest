@@ -13,6 +13,8 @@ import { SingleEntryView } from "./views/SingleEntryView";
 import { EditEntryView } from "./views/EditEntryView";
 import { DashboardView } from "./views/DashboardView";
 import { AccountView } from "./views/AccountView";
+import { NotFoundView } from "./views/NotFoundView";
+import { DemoView } from "./views/DemoView";
 
 function App() {
   const [id, setId] = useState('');
@@ -43,10 +45,10 @@ function App() {
                          element={<SingleEntryView/>}/>
                   <Route path='/:id/termbase/:termbaseId/entry/:entryId/edit'
                          element={<EditEntryView/>}/>
-                  {/*<Route path='/demo'*/}
-                  {/*       element={<DemoView/>}/>*/}
-                  {/*<Route path='*'*/}
-                  {/*       element={<NotFoundView/>}/>*/}
+                  <Route path='/demo'
+                         element={<DemoView/>}/>
+                  <Route path='*'
+                         element={<NotFoundView/>}/>
               </Routes>
           </TermbaseContext.Provider>
       </UserContext.Provider>

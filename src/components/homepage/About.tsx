@@ -60,7 +60,7 @@ export const About = () => {
 					</div>
 				</div>
 				<div className="container text-center">
-					<Link to="/termbases/sampletermbase"
+					<Link to="/demo"
 						  className="btn btn-lg theme-btn-darkaccent border-2 mt-5 px-5">Zobacz, jak to działa</Link>
 				</div>
 			</div>
