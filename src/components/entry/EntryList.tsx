@@ -12,6 +12,7 @@ export const EntryList = () => {
 	const [entryList, setEntryList] = useState<EntryEntity[] | null>(null);
 	const [showModal, setShowModal] = useState(false);
 	const [termbaseName, setTermbaseName] = useState<string>('');
+	const [sort, setSort] = useState<string>('');
 
 	const { id } = useContext(UserContext);
 	const { termbaseId } = useContext(TermbaseContext);
@@ -27,7 +28,7 @@ export const EntryList = () => {
 		const termbase: TermbaseEntity = await termbaseRes.json();
 		setTermbaseName(termbase.termbaseName);
 
-		const res = await fetch(`http://localhost:3001/${termbaseId}/entry`, {
+		const res = await fetch(`http://localhost:3001/${termbaseId}/entry?sort=${sort}`, {
 			credentials: 'include',
 		});
 		const data: EntryEntity[] = await res.json();
@@ -38,7 +39,7 @@ export const EntryList = () => {
 		(async () => {
 			await refreshList();
 		})();
-	}, []);
+	}, [sort]);
 
 	const deleteTermbase = async () => {
 		await fetch(`http://localhost:3001/${id}/termbase/${termbaseId}`, {
@@ -83,6 +84,17 @@ export const EntryList = () => {
 				>
 					Wróć do listy słowników
 				</Link>
+			</div>
+			<div className="mb-3">
+					<label className="me-2">Sortuj: </label>
+					<select
+						value={sort}
+						onChange={e => setSort(e.target.value)}
+					>
+						<option value={''}>alfabetycznie</option>
+						<option value={'createdAt'}>od najnowszych</option>
+						<option value={'modifiedAt'}>od ostatnio edytowanych</option>
+					</select>
 			</div>
 			<EntryTable entries={entryList}
 						onListChange={refreshList}
