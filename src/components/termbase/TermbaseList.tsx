@@ -59,12 +59,12 @@ export const TermbaseList = () => {
 		>
 			Stwórz nowy słownik
 		</button>
-		{/*<Link*/}
-		{/*	to={`/user/${userName}`}*/}
-		{/*	className="btn theme-btn-light-darkaccent mb-5 ms-3"*/}
-		{/*>*/}
-		{/*	Wróć do panelu*/}
-		{/*</Link>*/}
+		<Link
+			to={`/user/${id}`}
+			className="btn theme-btn-light-darkaccent mb-5 ms-3"
+		>
+			Wróć do panelu
+		</Link>
 		<div>
 			{showForm ? <AddTermbase onListChange={refreshList}/> : null}
 		</div>
