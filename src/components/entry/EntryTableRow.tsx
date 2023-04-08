@@ -19,6 +19,7 @@ export const EntryTableRow = (props: Props) => {
 	const deleteEntry = async () => {
 		await fetch(`http://localhost:3001/${termbaseId}/entry/${props.entry.id}`, {
 			method: 'DELETE',
+			credentials: 'include',
 		});
 		props.onListChange();
 	}

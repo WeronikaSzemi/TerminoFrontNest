@@ -36,6 +36,7 @@ export const AddTermbase = (props: Props) => {
 				headers: {
 					'Content-Type': 'application/json',
 				},
+				credentials: 'include',
 				body: JSON.stringify(termbase),
 			});
 			setSavedTermbase(true);

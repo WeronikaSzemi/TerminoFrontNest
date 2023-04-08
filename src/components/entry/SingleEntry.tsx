@@ -18,7 +18,9 @@ export const SingleEntry = () => {
 
 	useEffect(() => {
 		(async () => {
-			const res = await fetch(`http://localhost:3001/${termbaseId}/entry/${entryId}`);
+			const res = await fetch(`http://localhost:3001/${termbaseId}/entry/${entryId}`, {
+				credentials: 'include',
+			});
 			setEntry(await res.json());
 		})();
 	}, []);
@@ -26,6 +28,7 @@ export const SingleEntry = () => {
 	const deleteEntry = async () => {
 		await fetch(`http://localhost:3001/${termbaseId}/entry/${entryId}`, {
 			method: 'DELETE',
+			credentials: 'include',
 		});
 		navigate(`/${id}/termbase/${termbaseId}/entry`);
 	}

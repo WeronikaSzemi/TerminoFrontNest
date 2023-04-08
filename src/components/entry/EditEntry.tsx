@@ -19,7 +19,9 @@ export const EditEntry = () => {
 	useEffect(() => {
 
 		(async () => {
-			const res = await fetch(`http://localhost:3001/${termbaseId}/entry/${entryId}`);
+			const res = await fetch(`http://localhost:3001/${termbaseId}/entry/${entryId}`, {
+				credentials: 'include',
+			});
 			const currEntry: EntryEntity = await res.json();
 			setEntry({
 				term: currEntry.term,
@@ -57,6 +59,7 @@ export const EditEntry = () => {
 				headers: {
 					'Content-Type': 'application/json',
 				},
+				credentials: 'include',
 				body: JSON.stringify(entry),
 			});
 		} finally {

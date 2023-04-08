@@ -33,6 +33,7 @@ export const TermbaseTableRow = (props: Props) => {
 			navigate('/user/login');
 		} else {
 			await fetch(`http://localhost:3001/${id}/termbase/${props.termbase.termbaseId}`, {
+				credentials: 'include',
 				method: 'DELETE',
 			});
 			setShowModal(false);

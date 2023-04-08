@@ -21,11 +21,15 @@ export const EntryList = () => {
 	const refreshList = async () => {
 		setEntryList(null);
 
-		const termbaseRes = await fetch(`http://localhost:3001/${id}/termbase/${termbaseId}/`);
+		const termbaseRes = await fetch(`http://localhost:3001/${id}/termbase/${termbaseId}/`, {
+			credentials: 'include',
+		});
 		const termbase: TermbaseEntity = await termbaseRes.json();
 		setTermbaseName(termbase.termbaseName);
 
-		const res = await fetch(`http://localhost:3001/${termbaseId}/entry`);
+		const res = await fetch(`http://localhost:3001/${termbaseId}/entry`, {
+			credentials: 'include',
+		});
 		const data: EntryEntity[] = await res.json();
 		setEntryList(data);
 	}
@@ -39,6 +43,7 @@ export const EntryList = () => {
 	const deleteTermbase = async () => {
 		await fetch(`http://localhost:3001/${id}/termbase/${termbaseId}`, {
 			method: 'DELETE',
+			credentials: 'include',
 		});
 		setShowModal(false);
 		navigate(`/${id}/termbase/`);

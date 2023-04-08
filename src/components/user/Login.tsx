@@ -32,6 +32,7 @@ export const Login = () => {
 			headers: {
 				'Content-Type': 'application/json',
 			},
+			credentials: 'include',
 			body: JSON.stringify(user),
 		});
 		const result = await res.json();

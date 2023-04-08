@@ -36,6 +36,7 @@ export const AddEntry = () => {
 				headers: {
 					'Content-Type': 'application/json',
 				},
+				credentials: 'include',
 				body: JSON.stringify(entry),
 			});
 			navigate(`/${id}/termbase/${termbaseId}/entry`);

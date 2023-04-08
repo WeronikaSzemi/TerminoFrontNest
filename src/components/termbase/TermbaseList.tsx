@@ -18,17 +18,21 @@ export const TermbaseList = () => {
 	const refreshList = async () => {
 		setTermbaseList(null);
 
-		const verifRes = await fetch(`http://localhost:3001/auth/verify/${id}`);
-		const result = await verifRes.json();
-
-		if (!result.result) {
-			navigate('/user/login');
-		} else {
-			const res = await fetch(`http://localhost:3001/${id}/termbase`);
+		// const verifRes = await fetch(`http://localhost:3001/auth/verify/${id}`, {
+		// 	credentials: 'include',
+		// });
+		// const result = await verifRes.json();
+		//
+		// if (!result.result) {
+		// 	navigate('/user/login');
+		// } else {
+			const res = await fetch(`http://localhost:3001/${id}/termbase`, {
+				credentials: "include",
+			});
 			const data = await res.json();
 			setTermbaseList(data);
 			setShowForm(false);
-		}
+		// }
 	};
 
 	useEffect(() => {

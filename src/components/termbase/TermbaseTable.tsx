@@ -12,7 +12,7 @@ export const TermbaseTable = (props: Props) => {
 
 	const { id } = useContext(UserContext);
 
-	return <table className="table table-striped TermsTable align-middle">
+	return <table className="table table-striped entry-table align-middle">
 		<thead className="theme-bg-dark theme-text-light">
 		<tr>
 			<th>Nazwa słownika</th>

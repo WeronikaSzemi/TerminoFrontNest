@@ -4,13 +4,12 @@ import "../style.css";
 import { UserContext } from "../../contexts/user.context";
 
 export const Menu = () => {
-	const { id, setId } = useContext(UserContext);
+	const {id, setId} = useContext(UserContext);
 
 	const navigate = useNavigate();
 
 	const handleDashboardReq = async (e: BaseSyntheticEvent) => {
 		e.preventDefault();
-
 
 		if (id) {
 			const res = await fetch(`http://localhost:3001/auth/verify/${id}`);
@@ -27,7 +26,7 @@ export const Menu = () => {
 		}
 	}
 
-	return <>
+	return (
 		<div className="navbar navbar-expand-md sticky-top navbar-dark theme-bg-lightaccent">
 			<div className="container-fluid">
 				<a href="/"
@@ -71,5 +70,5 @@ export const Menu = () => {
 				</div>
 			</div>
 		</div>
-	</>
-};
+	)
+}
