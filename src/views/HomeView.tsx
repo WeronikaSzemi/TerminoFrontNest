@@ -11,7 +11,6 @@ export const HomeView = () => {
 		<Menu/>
 		<Welcome/>
 		<About/>
-		{/*/!*<LoginOrRegister/>*!/*/}
 		<ContactForm/>
 	</>
 }

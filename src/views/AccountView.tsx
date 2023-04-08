@@ -1,9 +1,9 @@
 import {Account} from "../components/user/Account";
-import {Menu} from "../components/homepage/Menu";
+import { UserMenu } from "../components/common/UserMenu";
 
 export const AccountView = () => {
 	return <>
-		<Menu/>
+		<UserMenu/>
 		<Account/>
 	</>
 }
