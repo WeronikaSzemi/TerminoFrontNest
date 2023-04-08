@@ -55,7 +55,7 @@ export const Dashboard = () => {
 						<p className="text-center display-6 theme-text-lightaccent">
 							<i className="bi bi-person-circle"></i>
 						</p>
-						<h3 className="card-title mb-4 fs-4 theme-text-dark">Twoje dane</h3>
+						<h3 className="card-title mb-4 fs-4 theme-text-dark">Twoje konto</h3>
 						<Link to={`/user/${id}/account`}
 							  className="btn theme-btn-lightaccent">Zarządzaj</Link>
 					</div>

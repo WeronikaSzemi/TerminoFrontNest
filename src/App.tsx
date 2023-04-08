@@ -12,6 +12,7 @@ import { AddEntryView } from "./views/AddEntryView";
 import { SingleEntryView } from "./views/SingleEntryView";
 import { EditEntryView } from "./views/EditEntryView";
 import { DashboardView } from "./views/DashboardView";
+import { AccountView } from "./views/AccountView";
 
 function App() {
   const [id, setId] = useState('');
@@ -30,6 +31,8 @@ function App() {
                          element={<LoginView/>}/>
                   <Route path='/user/:id'
                          element={<DashboardView/>}/>
+                  <Route path='/user/:id/account'
+                         element={<AccountView/>}/>
                   <Route path='/:id/termbase'
                          element={<TermbaseListView/>}/>
                   <Route path='/:id/termbase/:termbaseId/entry'
