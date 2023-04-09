@@ -3,17 +3,17 @@
 << *[wersja polskojęzyczna](#termino--aplikacja-do-przechowywania-s%C5%82ownictwa)* >>
 
 <ol>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#project-description">Project description</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#project-description">Project description</a></li>
   <ol>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#functionalities">Functionalities</a></li>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#languages-and-technologies-used">Languages and technologies used</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#functionalities">Functionalities</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#languages-and-technologies-used">Languages and technologies used</a></li>
   </ol>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#next-steps">Nest steps</a></li>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#contact">Contact</a></li>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#demo">Demo</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#next-steps">Nest steps</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#contact">Contact</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#demo">Demo</a></li>
   <ol>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#video">Video</a></li>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#screenshots">Screenshots</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#video">Video</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#screenshots">Screenshots</a></li>
   </ol>
 </ol>
 
@@ -93,17 +93,17 @@ As for developing the app, I specifically intend to:
 # Termino – aplikacja do przechowywania słownictwa
 
 <ol>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#opis-projektu">Opis projektu</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#opis-projektu">Opis projektu</a></li>
   <ol>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#funkcjonalno%C5%9Bci">Funkcjonalności</a></li>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#zastosowane-j%C4%99zyki-biblioteki-i-frameworki">Użyte języki, biblioteki i frameworki</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#funkcjonalno%C5%9Bci">Funkcjonalności</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#zastosowane-j%C4%99zyki-biblioteki-i-frameworki">Użyte języki, biblioteki i frameworki</a></li>
   </ol>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#dalsze-plany">Dalsze plany</a></li>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#kontakt">Kontakt</a></li>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#demo">Demo</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#dalsze-plany">Dalsze plany</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#kontakt">Kontakt</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#demo">Demo</a></li>
   <ol>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#video">Wideo</a></li>
-    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#screenshots">Zrzuty ekranu</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#video">Wideo</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#screenshots">Zrzuty ekranu</a></li>
   </ol>
 </ol>
 
