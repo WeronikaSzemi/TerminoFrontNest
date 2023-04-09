@@ -3,7 +3,7 @@
 << *[wersja polskojęzyczna](#termino--aplikacja-do-przechowywania-s%C5%82ownictwa)* >>
 
 <ol>
-  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#project-description">Project description</a></li>
+  <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/blob/main/README.md#project-description">Project description</a></li>
   <ol>
     <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#functionalities">Functionalities</a></li>
     <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/main/README.md#languages-and-technologies-used">Languages and technologies used</a></li>
