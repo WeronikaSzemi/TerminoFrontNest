@@ -11,6 +11,10 @@
   <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#next-steps">Nest steps</a></li>
   <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#contact">Contact</a></li>
   <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#demo">Demo</a></li>
+  <ol>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#video">Video</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#screenshots">Screenshots</a></li>
+  </ol>
 </ol>
 
 ## Project description
@@ -60,9 +64,31 @@ As for developing the app, I specifically intend to:
 
 ## Demo
 
+### Video
 ![](https://github.com/WeronikaSzemi/TerminoFrontNest/blob/develop/public/TerminoDemo.gif)
 
-!
+### Screenshots
+
+![image](https://user-images.githubusercontent.com/116355495/230779982-168d35b6-50b9-4854-9469-94e579b486fe.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780051-a02d4f50-6eba-4801-b126-d52ab8429776.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780109-51e26d6b-2fcf-4a32-8327-07b45b354163.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780144-032b25ff-c4dd-4371-8161-76e873e2f5a4.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780172-919c9864-4140-4d17-add8-0c8eb3ecf7b2.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780265-a426551d-01bc-4c75-8e10-aa1907e25b17.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780457-444c19a1-a70c-4381-847a-0210507f1576.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780313-670c96a8-3e99-473e-8a2f-e20521ad48c8.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780358-7227e52f-ff95-4759-8ca0-65c9464751c1.png)
+
+![image](https://user-images.githubusercontent.com/116355495/230780402-967f50c4-ec5c-4399-9240-3c334514677f.png)
+
 
 # Termino – aplikacja do przechowywania słownictwa
 
@@ -75,6 +101,10 @@ As for developing the app, I specifically intend to:
   <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#dalsze-plany">Dalsze plany</a></li>
   <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#kontakt">Kontakt</a></li>
   <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#demo">Demo</a></li>
+  <ol>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#video">Wideo</a></li>
+    <li><a href="https://github.com/WeronikaSzemi/TerminoFrontNest/edit/main/README.md#screenshots">Zrzuty ekranu</a></li>
+  </ol>
 </ol>
 
 ## Opis projektu
