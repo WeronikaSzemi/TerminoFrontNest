@@ -1,7 +1,8 @@
 import React, {FormEvent, useContext, useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import { UserContext } from "../../contexts/user.context";
-import { NewTermbase } from "../../types/new-termbase";
+import { NewTermbase } from "../../types/termbase-entity";
+import { Spinner } from "../Spinner/Spinner";
 
 interface Props {
 	onListChange: () => void;
@@ -51,6 +52,10 @@ export const AddTermbase = (props: Props) => {
 			termbaseName,
 		}));
 	};
+
+	if (loading) {
+		return <Spinner/>
+	}
 
 
 	return <div className="theme-border-lightaccent pb-5">

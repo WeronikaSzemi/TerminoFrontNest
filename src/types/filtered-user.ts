@@ -1,4 +1,4 @@
 export interface FilteredUser {
-	userId: 'string';
-	email: 'string';
+	userId: string;
+	email: string;
 }
