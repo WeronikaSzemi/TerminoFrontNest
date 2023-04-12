@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+.theme-text-light {
+    color: #F6F6F2;
+}
+
+.theme-text-dark {
+    color: #1C131E;
+}
+
+.theme-text-darkaccent {
+    color: #AC415C;
+}
+
+.theme-text-lightaccent {
+    color: #6798BF;
+}
+
+.theme-text-mainbrand {
+    color: #004AAD;
+}
+
+.theme-bg-light {
+    background-color: #F6F6F2;
+}
+
+.theme-bg-dark {
+    background-color: #1C131E;
+}
+
+.theme-bg-darkaccent {
+    background-color: #AC415C;
+}
+
+.theme-bg-lightaccent {
+    background-color: #6798BF;
+}
+
+.theme-bg-mainbrand {
+    background-color: #004AAD;
+}
+
+.theme-border-light {
+    border-color: #F6F6F2 !important;
+}
+
+.theme-border-dark {
+    border-color: #1C131E !important;
+}
+
+.theme-border-darkaccent {
+    border-color: #AC415C !important;
+}
+
+.theme-border-lightaccent {
+    border-color: #6798BF !important;
+}
+
+.theme-border-mainbrand {
+    border-color: #004AAD !important;
+}
+
+.theme-btn-darkaccent {
+    border-color: #AC415C;
+    background-color: #AC415C;
+    color: #ffffff;
+}
+
+.theme-btn-darkaccent:hover {
+    border-color: #AC415C;
+    background-color: #ffffff;
+    color: #AC415C;
+}
+
+.theme-btn-mainbrand {
+    border-color: #004AAD;
+    background-color: #004AAD;
+    color: #ffffff;
+}
+
+.theme-btn-mainbrand:hover {
+    border-color: #004AAD;
+    background-color: #ffffff;
+    color: #004AAD;
+}
+
+.theme-btn-lightaccent {
+    border-color: #6798BF;
+    background-color: #6798BF;
+    color: #ffffff;
+}
+
+.theme-btn-lightaccent:hover {
+    border-color: #6798BF;
+    background-color: #ffffff;
+    color: #6798BF;
+}
+
+.theme-btn-darkaccent {
+    border-color: #AC415C;
+    background-color: #AC415C;
+    color: #ffffff;
+}
+
+.theme-btn-darkaccent:hover {
+    border-color: #AC415C;
+    background-color: #ffffff;
+    color: #AC415C;
+}
+
+.theme-btn-light-main {
+    border: 3px solid #004AAD;
+    background-color: #ffffff;
+    color: #004AAD;
+}
+
+.theme-btn-light-main:hover {
+    border-color: #004AAD;
+    background-color: #004AAD;
+    color: #ffffff;
+}
+
+.theme-btn-light-darkaccent {
+    border: 3px solid #AC415C;
+    background-color: #ffffff;
+    color: #AC415C;
+}
+
+.theme-btn-light-darkaccent:hover {
+    border-color: #AC415C;
+    background-color: #AC415C;
+    color: #ffffff;
+}
+
+.theme-btn-light-lightaccent {
+    border: 3px solid #6798BF;
+    background-color: #ffffff;
+    color: #6798BF;
+}
+
+.theme-btn-light-lightaccent:hover {
+    border-color: #6798BF;
+    background-color: #6798BF;
+    color: #ffffff;
+}
+
+.nav-link {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #004AAD !important;
+    background-color: #ffffff !important;
+}
+
+label.required-field {
+    color: #004AAD;
+}
+
+input.required-field {
+    border-color: #004AAD;
+}
+
+
+/* ConfirmDeleteModal-related styles */
+
+.delete-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+.modal-div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    z-index: 1000;
+}
+
+/* entry table styles */
+
+.entry-table {
+    width: auto;
+}
+
+.entry-table > :not(caption) > * > * {
+    padding: 0.5rem 1.5rem
+}
+
+/* form labels styles */
+
+.form-label > p, textarea {
+    margin: 10px 0 1px;
+}
+
+textarea {
+    margin-top: 0;
+}
